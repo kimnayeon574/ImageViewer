@@ -109,19 +109,21 @@
             // 
             this.btnPrev.Location = new System.Drawing.Point(12, 162);
             this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(88, 53);
+            this.btnPrev.Size = new System.Drawing.Size(75, 53);
             this.btnPrev.TabIndex = 2;
             this.btnPrev.Text = "이전";
             this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(180, 162);
+            this.btnNext.Location = new System.Drawing.Point(193, 162);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(88, 53);
+            this.btnNext.Size = new System.Drawing.Size(75, 53);
             this.btnNext.TabIndex = 3;
             this.btnNext.Text = "다음";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // Form1
             // 
@@ -136,6 +138,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "사진첩";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picImg)).EndInit();
             this.ResumeLayout(false);
 
